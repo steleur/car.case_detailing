@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Наши работы</title>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="gallery">
+
+        {% for g in gallery %}
+            <div class="car-card">
+                <a href="gallery/{{ g.slug }}"> <img src="{{ g.car_picture.url }}" class="main-car-picture"></a>
+                <div class="car-name">
+                    <a href="gallery/{{ g.slug }}"><h2 class="car-name">{{ g.car }}</h2></a>
+                </div>
+            </div>
+        {% endfor %}
+
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js">
+        </script>
+        <script src="{% static 'picture_viewer.js' %}"></script>
+    </div>
+
+{% include 'footer.html' %}
+</body>
+</html>

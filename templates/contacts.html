@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+{% include 'header.html' %}
+
+<div class="contacts-container">
+    <div class="contacts">
+        <h3>CarCase Detailing</h3>
+        <span class="contacts-info"><img src="{% static 'icons/pin.png' %}" class="icon-img"><a
+                href="https://yandex.by/maps/157/minsk/house/Zk4YcgFnTEcBQFtpfXR4dXlmYA==/?ll=27.470789%2C53.894693&z=16.35">Беларусь, г. Минск, ул. Медвежино, 13</a> </span>
+        <span class="contacts-info"><img src="{% static 'icons/telephone.png' %}" class="icon-img"><a
+                href="tel:+375297291333">+375 (29) 729 13 33</a> </span>
+        <span class="contacts-info"><img src="{% static 'icons/email.png' %}" class="icon-img"> <a
+                href="mailto:info@carcase.by">info@carcase.by</a></span>
+        <span class="contacts-info"><img src="{% static 'icons/three-o-clock-clock.png' %}"
+                                         class="icon-img">Пн-Вс: 10<sup>00</sup>&nbsp;- 19<sup>00</sup></span>
+    </div>
+    <div class="feedback-form">
+        <div class="feedback-text"><h3>Остались вопросы? Напиши нам, и мы перезвоним!</h3>
+        </div>
+
+        <form action="/contacts" method="post">
+            {% csrf_token %}
+            <div class="feedback-form-fields">
+                <input placeholder="Ваше имя*" required name="name">
+                <input id="phone-mask" placeholder="Ваш телефон*" type="text" minlength="17" name="phone_number">
+                <input placeholder="Интересующая услуга" name="service">
+            </div>
+            <textarea placeholder="Ваше сообщение" name="text"></textarea>
+            <div class="button-container">
+                <button type="submit">Отправить!</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae791bea63cc61bf2d62d98987cb69d2e14b15955097277dc95294fc47e426838&amp;width=auto&amp;height=489&amp;lang=ru_RU&amp;scroll=false"></script>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="{% static 'script.js' %}"></script>
+{% include 'footer.html' %}
+</body>
+</html>

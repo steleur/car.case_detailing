@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+</head>
+<body>
+{% include 'header.html' %}
+<div class="car-block">
+    <div class="vertical-description">
+        <h4>{{ gallery.works }}</h4>
+        <ul>
+
+            {% for c in car_work %}
+                {% if gallery.id == c.car_id %}
+                    <li>{{ c.car_work }}</li>
+                {% endif %}
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="car-pictures image__wrapper">
+        {% for i in image %}
+            {% if gallery.id == i.car_id %}
+                <a data-fancybox="hui" href="{{ i.car_images.url}}">
+                <img src="{{ i.car_images.url }}" class="car-picture">
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js">
+</script>
+
+
+<script src="{% static 'picture_viewer.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% load static %}
+<header class="header">
+    <div class="header-section">
+        <span style="margin-right: auto; padding-left: 40px;">
+        <a class="header-item" href="{% url 'services' %}">Цены</a>
+        <a class="header-item" href="{% url 'gallery' %}">Наши работы</a>
+        <a class="header-item" href="{% url 'certificates' %}">Подарочные сертификаты</a>
+        <a class="header-item" href="{% url 'contacts' %}">Контакты</a>
+        </span>
+    </div>
+    <div class="header-section header-logo">
+
+        <span class="header-logo-text"><a href="{% url 'home' %}" class="header-logo-text">Car.Case</a></span>
+        <a href="{% url 'home' %}">
+            <img src="{% static 'img/logo.png' %}" alt="company logo" class="company-logo">
+        </a>
+        <span class="header-logo-text"><a href="{% url 'home' %}" class="header-logo-text">Detailing</a></span>
+
+    </div>
+    <div class="header-section">
+        <span style="margin-left: auto; display: inline-flex; padding-right: 40px;">
+        <img src="{% static 'img/phone.png' %}" class="phone-icon" style="align-self: center" alt="phone picture">
+        <a href="tel:+375297291333" class="header-item phone-number">+375 (29) 729 13 33</a>
+        </span>
+    </div>
+</header>
