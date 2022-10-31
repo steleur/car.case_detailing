@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap%27');
+@import url('https://fonts.googleapis.com/css?family=Biryani');
+/*@import url(//db.onlinewebfonts.com/c/7c9f10c28b366eb62a8e77aae9d1ebd9?family=Ricks+American+NF);*/
+
+
+@font-face {
+    font-family: "Ricks American NF";
+    src: url("Ricks_American_NF.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    text-decoration: none;
+    /*color: rgba(0, 0, 0, 0.7);*/
+    color: #868e64;
+}
+
+.header-logo:hover .header-logo-text {
+    color: #868e64;
+}
+
+.header {
+    display: flex;
+    /*background-color: #868e64;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*margin-bottom: 20px;*/
+
+}
+
+body {
+    margin: 0;
+    background-color: rgba(204, 204, 204, 0.6);
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.header-logo-text {
+    font-size: 50px;
+    font-family: 'Ricks American NF';
+    color: #000000;
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    letter-spacing: 5px;
+}
+
+.header-item {
+    padding: 10px 5px 0px 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.header-logo {
+
+}
+
+.phone-number {
+    margin-right: 20px;
+}
+
+.phone-icon {
+    filter: invert(100%);
+}
+
+
+.service-picture {
+    width: 560px;
+    height: auto;
+}
+
+.service-header {
+    display: flex;
+    width: 1600px;
+    justify-content: center;
+    margin: 20px auto 50px;
+
+}
+
+.service-description {
+    margin-left: 40px;
+    width: 560px;
+}
+
+.price-header {
+    display: flex;
+    width: 1160px;
+    justify-content: flex-start;
+    margin: 20px auto 10px;
+
+}
+
+.price-description {
+    width: 560px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    /*color: #868e64;*/
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    /*color: #868e64;*/
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 0;
+
+}
+
+
+.service-price {
+    margin-bottom: 50px;
+}
+
+.service-price-row {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    /*color: #868e64;*/
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.service-hr {
+    background: 1px #868e64;
+    width: 1160px;
+
+}
+
+hr {
+    margin-bottom: 20px;
+    margin-top: 0;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    gap: 25px 15px;
+
+
+}
+
+.main-car-picture {
+    max-width: 320px;
+    max-height: 240px;
+
+
+}
+
+
+.car-block {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.vertical-description {
+    width: 350px;
+    margin: 20px 30px 0 0;
+
+}
+
+.car-pictures {
+    width: 870px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.car-picture {
+    max-width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    max-height: 180px;
+
+
+}
+
+li {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.6);;
+    margin-top: 0;
+    font-weight: normal;
+
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    /*color: #868e64;*/
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 0;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 25px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.contacts-container {
+    width: 1200px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+
+
+}
+
+.contacts {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+.feedback-form {
+    width: 800px;
+    height: 400px;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+
+}
+
+.feedback-form-fields {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.contacts-info {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.icon-img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+input {
+    width: 225px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+select {
+    width: 225px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1px 2px;
+}
+
+textarea {
+    width: 800px;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(204, 204, 204, 0.6);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-style: solid;
+
+    justify-items: center;
+    margin-top: 20px;
+    color: #000000;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #868e64;
+    color: white;
+    border: none;
+}
+
+.car-name {
+    color: black;
+}
+
+.car-name:hover {
+    color: #868e64;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.certificates {
+    width: 800px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 121px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certificates-image {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.company-logo {
+    filter: saturate(25%);
+}
+
+
+.carousel {
+    position: relative;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    max-height: 560px;
+}
+
+.certificates-desc {
+    margin-top: 20px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /*color: #868e64;*/
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 90px;
+    flex: 0 0 auto;
+    position: absolute;
+    bottom: 0;
+
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+    margin-bottom: 90px;
+}
+
+.company-info {
+    align-self: self-end;
+    padding: 0 0 10px 10px;
+    width: 86px;
+}
+
+.social {
+    align-self: self-end;
+    margin: 15px auto;
+
+}
+/*h6{*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 0;*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    font-size: 10px;*/
+/*    color: rgba(0, 0, 0, 0.6);*/
+
+/*}*/
+
+/*footer-icons*/
+
+
+.fab {
+    margin-top: auto;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+
+.fa-instagram {
+    color: black;
+    font-size: 40px;
+    background: rgb(252, 249, 249);
+}
+
+.fa-instagram:hover {
+    color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: none;
+}
